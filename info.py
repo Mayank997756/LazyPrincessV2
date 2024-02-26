@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'LazyPrincess')
 API_ID = int(environ.get('API_ID', '27495451'))
 API_HASH = environ.get('API_HASH', '778fdfe2aae56a38907c0cb683708fc5')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6535816705:AAHFMjBryV6bn4rcOqJZFdTxQW-JsEyEJ3Y")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7053765733:AAEpH24f0JR-OfumdSCjW2jSkacQTy2HvuM")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -25,7 +25,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://graph.org/file/e27e32e2c352243a8abfc.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6989450551').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6129122991').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002039117054').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1484670284').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -40,7 +40,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "mayank9431060")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002039117054'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002018859534'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviessupport8')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
@@ -71,11 +71,11 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api./shareus.in/shortLink')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'niFa0EQBygMLcOLlqfgLBdHW6ne2')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api./https://gplinks.com/shortLink')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'ea4cdaeabd7e97a79fa1cad4b4939f03748b7853')
 
      # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 100))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
